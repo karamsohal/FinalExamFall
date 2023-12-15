@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+   Filename: home.html
+   Author: Karamjit Sohal
+   -->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Bootstrap Introduction</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- stylesheets -->
+      <link rel="stylesheet" href="style.css">
+      <!--bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css2?&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+      <script src="script.js"></script>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    
+   <body class="mx-5">
+      <nav aria-label="breadcrumb">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Homes for Sale</a></li>
+            <li class="breadcrumb-item"><a href="#">Homes for Rent</a></li>
+            <li class="breadcrumb-item">
+               <a href="#">
+                  Mortgage Calculator</a>
+            </li>
+         </ol>
+      </nav>
+      <nav class="navbar bg-light my-3">
+      <div class="container">
+      <a class="navbar-brand m-0" href="#">
+      <img src="images/home.png" alt="Bootstrap" width="30" height="24">
+      </a>
+      <a class="navbar-brand m-0" href="#">
+      <img src="images/phone-call.png" alt="Bootstrap" width="30" height="24">
+      </a>
+      <a class="navbar-brand m-0" href="#">
+      <img src="images/email.png" alt="Bootstrap" width="30" height="24">
+      </a>
+      </div>
+      </nav>
+      <div id="carouselExample" class="carousel slide">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="images/house1.jpg" class="d-block w-100 img-fluid" alt="Beige Color Duplex House with Car Garage">
+            </div>
+            <div class="carousel-item">
+               <img src="images/house2.jpg" class="d-block w-100 img-fluid" alt="Open Brick Duplex House 5BHK">
+            </div>
+            <div class="carousel-item">
+               <img src="images/house3.jpg" class="d-block w-100 img-fluid" alt="Blue Mansion House Riverside 3BHK With Garage">
+            </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+      <div class="container my-5">
+         <div class="row">
+            <div class="col-md-4 mb-3">
+               <div class="card">
+                  <div class="card-body">
+                     <img src="images/house_angle.jpg" class="card-img-top w-100 img-fluid" alt="...">
+                     <button type="button" class="btn btn-secondary " data-toggle="tooltip" data-placement="top" title="This is the side-angle image of the house.">
+                        Tooltip
+                      </button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 mb-3">
+               <div class="card">
+                  <div class="card-body">
+                     <img src="images/keys.jpg" class="card-img-top w-100 img-fluid" alt="...">
+                     <button type="button" class="btn btn-secondary " data-toggle="tooltip" data-placement="top" title="High-End security keys for the house.">
+                        Tooltip
+                      </button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 mb-3">
+               <div class="card">
+                  <div class="card-body">
+                     <img src="images/living_room.jpg" class="card-img-top w-100 img-fluid" alt="...">
+                     <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Spacious living room of the house.">
+                        Tooltip
+                      </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      
+    <form id="myForm" action="#" method="post">
+        <h1>Form</h1>
+        <div>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required minlength="3">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="comment">Comments</label>
+                    <textarea name="comment" id="comment" placeholder="type your comment here" minlength="6"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+   </body>
+</html>
